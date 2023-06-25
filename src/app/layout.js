@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
       <body className={`${lexend.className} pt-10`}>
         <Navigation />
         <div className="w-full flex justify-center">{children}</div>
-
         <Footer />
       </body>
     </html>
