@@ -5,15 +5,13 @@ const page = () => {
   return (
     Biography && (
       <div className="w-full flex flex-col items-center my-8">
-        <div className="w-10/12 flex justify-start ">
+        <div className="w-11/12 flex justify-start ">
           <Tag title="Biography" />
         </div>
         {Biography.map((paragraph, index) => (
           <div
             key={index}
-            className={`flex w-10/12 items-center justify-center flex-col ${
-              index % 2 == 0 ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
+            className="flex w-11/12 items-center justify-center flex-col even:md:flex-row odd:flex-row-reverse"
           >
             {paragraph.photopath != "" && (
               <img className="w-1/2 md:w-1/4 m-3" src={paragraph.photopath} />
