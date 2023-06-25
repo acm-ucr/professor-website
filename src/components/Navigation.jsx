@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaBars } from "react-icons/fa";
 import Home from "@/data/home";
 import Biography from "@/data/biography";
 import Teaching from "@/data/teaching";
@@ -56,7 +57,12 @@ const Navigation = () => {
           Neftali Watkinson
         </Link>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbar-nav" />
+      <Navbar.Toggle
+        className="list-unstyled !text-transparent"
+        aria-controls="basic-navbar-nav"
+      >
+        <FaBars className="text-white text-xl" />
+      </Navbar.Toggle>
       <Navbar.Collapse id="navbar-nav" className="!m-0 !p-0">
         <Nav className=" no-underline ml-auto text-2xl mb-0">
           {links
