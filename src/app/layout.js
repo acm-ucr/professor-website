@@ -15,9 +15,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lexend.className} pt-10`}>
+      <body
+        className={`${lexend.className} pt-10 min-h-screen flex flex-col justify-between`}
+      >
         <Navigation />
-        <div className="w-full flex justify-center">{children}</div>
+        <div className="w-full flex justify-center items-center">
+          {children}
+        </div>
 
         <Footer />
       </body>
