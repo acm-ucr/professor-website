@@ -20,6 +20,10 @@ const links = [
     name: "Teaching",
   },
   {
+    link: "/research",
+    name: "Research",
+  },
+  {
     link: "/publications",
     name: "Publications",
   },
