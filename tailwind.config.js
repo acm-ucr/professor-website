@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      color: {
+      colors: {
         professor: {
           blue: "#003DA5",
           yellow: "#FFB81C",
