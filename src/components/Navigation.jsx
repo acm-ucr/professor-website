@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      className="py-0 font-lexend w-full px-3 m-0 bg-ula-blue flex justify-between items-center"
+      className="py-0 font-lexend w-full px-3 m-0 bg-professor-blue flex justify-between items-center"
       expand="md"
       fixed="top"
     >
@@ -31,7 +31,9 @@ const Navigation = () => {
             eventkey="6"
             href="/"
             className={`${
-              usePathname() === "/" ? "!bg-ula-yellow text-black" : "text-white"
+              usePathname() === "/"
+                ? "!bg-professor-yellow text-black"
+                : "text-white"
             } mb-0 py-1 px-3 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
           >
             Home
@@ -42,7 +44,7 @@ const Navigation = () => {
             href="/overview"
             className={`${
               usePathname() === "/overview"
-                ? "!bg-ula-yellow text-black"
+                ? "!bg-professor-yellow text-black"
                 : "text-white"
             } mb-0 py-1 px-3 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
           >
@@ -54,7 +56,7 @@ const Navigation = () => {
             href="/calendars"
             className={`${
               usePathname() === "/calendars"
-                ? "!bg-ula-yellow text-black"
+                ? "!bg-professor-yellow text-black"
                 : "text-white"
             } mb-0 py-1 px-3 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
           >
@@ -63,14 +65,14 @@ const Navigation = () => {
           <Nav.Link
             as={Link}
             eventkey="6"
-            href="/ulas"
+            href="/professors"
             className={`${
-              usePathname() === "/ulas"
-                ? "!bg-ula-yellow text-black"
+              usePathname() === "/professors"
+                ? "!bg-professor-yellow text-black"
                 : "text-white"
             } mb-0 py-1 px-3 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
           >
-            ULAs
+            professors
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
