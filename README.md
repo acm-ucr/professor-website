@@ -9,6 +9,10 @@
 ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
+## Figma
+
+[Professor Website Figma Design File](https://www.figma.com/file/xxpHCYEhYeaYOw5YA88uth/Professors-Website?type=design&node-id=0%3A1&mode=design&t=WU6yx2XpUb1H05aO-1)
+
 ## Node.js
 
 UCR Professor Official Website runs on Node.js Version 16.17.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
